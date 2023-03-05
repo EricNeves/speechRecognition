@@ -7,16 +7,15 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/app.js":
 /*!********************!*\
   !*** ./src/app.js ***!
   \********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (() => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction generateJoke() {\n  return \"Hello World\";\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (generateJoke);\n\n//# sourceURL=webpack://record/./src/app.js?");
+eval("var $button = document.querySelector('#play');\nvar ball = document.querySelector('.box__recorder img');\nvar boxResult = document.querySelector('.box__recorder p');\nvar startBallAnimantion = function startBallAnimantion() {\n  ball.classList.add('active');\n};\nvar stopBallAnimantion = function stopBallAnimantion() {\n  ball.classList.remove('active');\n};\nfunction changeTheme() {\n  document.querySelector('body').classList.add('light');\n  document.querySelectorAll('header li a').forEach(function (item) {\n    item.classList.add('dark');\n  });\n  boxResult.classList.add('dark');\n  document.querySelector('.box__recorder h1').classList.add('dark');\n  document.querySelector('.box__recorder p').classList.add('dark');\n  document.querySelector('.box__recorder a').classList.add('dark');\n}\nfunction handlerRecorder() {\n  var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;\n  var recognition = SpeechRecognition !== undefined ? new SpeechRecognition() : null;\n  if (!recognition) {\n    boxResult.innerHTML = 'Sorry, something is wrong :(';\n  }\n  recognition.lang = 'pt-br';\n  recognition.start();\n  recognition.onresult = function (e) {\n    var resultText = e.results[0][0].transcript;\n    if (resultText == 'hello world') {\n      changeTheme();\n    }\n    boxResult.innerHTML = resultText;\n    stopBallAnimantion();\n  };\n}\nfunction handlerClick(e) {\n  e.preventDefault();\n  startBallAnimantion();\n  handlerRecorder();\n}\n$button.addEventListener('click', handlerClick);\n\n//# sourceURL=webpack://record/./src/app.js?");
 
 /***/ }),
 
@@ -26,7 +25,8 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app */ \"./src/app.js\");\n/* harmony import */ var _public_css_main_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./public/css/main.css */ \"./src/public/css/main.css\");\n\n\nconsole.log((0,_app__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\n\n//# sourceURL=webpack://record/./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app */ \"./src/app.js\");\n/* harmony import */ var _app__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_app__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _public_css_main_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./public/css/main.css */ \"./src/public/css/main.css\");\n\n\n\n//# sourceURL=webpack://record/./src/index.js?");
 
 /***/ }),
 
@@ -36,6 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _app
   \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://record/./src/public/css/main.css?");
 
 /***/ })
@@ -67,6 +68,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
