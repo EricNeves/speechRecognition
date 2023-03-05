@@ -9,10 +9,10 @@
 #### Executando ⚙️
 
 ```sh
-# Website: https://recorder-speechR.netlify.app/
+# Website: https://speech-recon.netlify.app/
 
 # Clone
-$ git clone https://github.com/EricNeves/simpleSPA.git
+$ git clone https://github.com/EricNeves/speechRecognition.git
 
 # Install Dependencies
 $ cd speechRecognition && npm install
