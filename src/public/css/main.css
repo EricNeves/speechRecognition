@@ -17,6 +17,9 @@ body {
     font-family: 'Tilt Neon', cursive;
     background: var(--dark);
 }
+body.light {
+    background: var(--highlight);
+}
 
 /* Global */
 .container {
@@ -42,6 +45,9 @@ header li a {
     color: var(--highlight);
     font-size: 1.2rem;
 }
+header li a.dark {
+    color: var(--dark);
+}
 
 .box__recorder {
     padding: 3rem 1rem;
@@ -49,6 +55,9 @@ header li a {
 }
 .box__recorder h1 {
     color: var(--light);
+}
+.box__recorder h1.dark {
+    color: var(--dark);
 }
 .box__recorder img {
     width: 2.8rem;
@@ -70,6 +79,9 @@ header li a {
     color: var(--paragraph);
     padding: 1rem 2rem 3rem 2rem;
 }
+.box__recorder p.dark {
+    color: var(--dark);
+}
 .box__recorder a {
     padding: 1rem 2rem;
     background: var(--highlight);
@@ -80,4 +92,14 @@ header li a {
 }
 .box__recorder a:hover {
     opacity: .8;
+}
+.box__recorder a.dark {
+    background: var(--dark);
+    color: var(--highlight);
+}
+
+@media( max-width: 700px ) {
+    .box__recorder p {
+        padding: 1rem 1rem 3rem 1rem;
+    }
 }

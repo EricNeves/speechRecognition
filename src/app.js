@@ -10,11 +10,18 @@ const stopBallAnimantion = () => {
     ball.classList.remove('active')
 }
 
-function handlerClick(e) {
-    e.preventDefault()
+function changeTheme() {
+    document.querySelector('body').classList.add('light')
+    document.querySelectorAll('header li a').forEach(item => {
+        item.classList.add('dark')
+    })
+    boxResult.classList.add('dark')
+    document.querySelector('.box__recorder h1').classList.add('dark')
+    document.querySelector('.box__recorder p').classList.add('dark')
+    document.querySelector('.box__recorder a').classList.add('dark')
+}
 
-    startBallAnimantion()
-
+function handlerRecorder() {
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition
     const recognition = SpeechRecognition !== undefined ? new SpeechRecognition() : null
 
@@ -28,9 +35,21 @@ function handlerClick(e) {
     recognition.onresult = (e) => {
         const resultText = e.results[0][0].transcript
 
+        if (resultText == 'hello world') {
+            changeTheme()
+        }
+
         boxResult.innerHTML = resultText
         stopBallAnimantion()
     }
+}
+
+function handlerClick(e) {
+    e.preventDefault()
+
+    startBallAnimantion()
+
+    handlerRecorder()
 }
 
 $button.addEventListener('click', handlerClick)
