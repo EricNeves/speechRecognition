@@ -1,7 +1,6 @@
 ### Speech Recognition 
 
-<img src="https://img.shields.io/github/license/ericneves/speechRecognition?logo=appveyor&style=flat-square">
-<img src="https://img.shields.io/github/last-commit/ericneves/speechRecognition?logo=appveyor&style=flat-square">
+<img src="https://img.shields.io/github/license/ericneves/speechRecognition?logo=appveyor&style=flat-square"> <img src="https://img.shields.io/github/last-commit/ericneves/speechRecognition?logo=appveyor&style=flat-square">
 
 <p>Projeto web de reconhecimento de voz com API <b>Speech Recognition</b>, o site fora desenvolvido com HTML, CSS, Javascript e ferramentas como Webpack e Babel.</p>
 
