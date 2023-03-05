@@ -1,5 +1,8 @@
 ### Speech Recognition 
 
+<img src="https://img.shields.io/github/license/ericneves/speechRecognition?logo=appveyor&style=flat-square">
+<img src="https://img.shields.io/github/last-commit/ericneves/speechRecognition?logo=appveyor&style=flat-square">
+
 <p>Projeto web de reconhecimento de voz com API <b>Speech Recognition</b>, o site fora desenvolvido com HTML, CSS, Javascript e ferramentas como Webpack e Babel.</p>
 
 <img src=".github/screenshot.png">
@@ -30,10 +33,10 @@ $ npm run build
    * Javascript
      * Speech Recognition
    * NodeJS
-     * [Express]('https://expressjs.com/')
-     * [Webpack]('https://webpack.js.org/')
-     * [Babel]('https://babeljs.io/')
+     * Express
+     * Webpack
+     * Babel
 
 #### License
 
-![GitHub](https://img.shields.io/github/license/ericneves/simplespa?color=red&logo=square&style=social)
+<img src="https://img.shields.io/github/license/ericneves/speechRecognition?logo=appveyor&style=flat-square">
