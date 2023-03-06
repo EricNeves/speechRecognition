@@ -38,6 +38,9 @@ header .brand i {
     font-size: 1.4rem;
     color: var(--paragraph);
 }
+header .brand i.dark {
+    color: var(--dark);
+}
 header ul li {
     display: inline-block;
     margin-left: 1.2rem;

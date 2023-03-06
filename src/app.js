@@ -19,6 +19,7 @@ function changeTheme() {
     document.querySelector('.box__recorder h1').classList.add('dark')
     document.querySelector('.box__recorder p').classList.add('dark')
     document.querySelector('.box__recorder a').classList.add('dark')
+    document.querySelector('header .brand i').classList.add('dark')
 }
 
 function handlerRecorder() {
