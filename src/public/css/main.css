@@ -34,8 +34,9 @@ header > .container {
     align-items: center;
     padding: 1rem 2rem;
 }
-header .brand img {
-    width: 2.2rem;
+header .brand i {
+    font-size: 1.4rem;
+    color: var(--paragraph);
 }
 header ul li {
     display: inline-block;
