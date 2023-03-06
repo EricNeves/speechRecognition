@@ -1,4 +1,4 @@
-### Speech Recognition 
+### Speech Recognition 🎙️
 
 <img src="https://img.shields.io/github/license/ericneves/speechRecognition?logo=appveyor&style=flat-square"> <img src="https://img.shields.io/github/last-commit/ericneves/speechRecognition?logo=appveyor&style=flat-square">
 
