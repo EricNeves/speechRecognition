@@ -47,9 +47,7 @@ function handlerRecorder() {
 
 function handlerClick(e) {
     e.preventDefault()
-
     startBallAnimantion()
-
     handlerRecorder()
 }
 
