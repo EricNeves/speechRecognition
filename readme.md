@@ -4,7 +4,7 @@
 
 <p>Projeto web de reconhecimento de voz com a API <b>Speech Recognition</b>, o site fora desenvolvido com HTML, CSS, Javascript e ferramentas como Webpack e Babel.</p>
 
-<img style="border-radius: .5rem;" src=".github/screenshot.png">
+<img src=".github/screenshot.png">
 
 #### Executando ⚙️
 
